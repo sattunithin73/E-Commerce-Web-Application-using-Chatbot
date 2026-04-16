@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<section class="contact-page">
+
+  <div class="contact-wrapper">
+
+```
+<div class="contact-left">
+  <h1>Contact Us</h1>
+
+  <p>We’d love to hear from you.</p>
+
+  <p><strong>Address:</strong> Hyderabad</p>
+  <p><strong>Phone:</strong> +91 XXXXXXXX</p>
+  <p><strong>Email:</strong> your@email.com</p>
+</div>
+
+<div class="contact-right">
+  <form method="POST">
+    {% csrf_token %}
+
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Message" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+
+  {% if success %}
+  <p class="msg-success">Message sent successfully!</p>
+  {% endif %}
+
+</div>
+```
+
+  </div>
+
+</section>
+
+</body>
+</html>
