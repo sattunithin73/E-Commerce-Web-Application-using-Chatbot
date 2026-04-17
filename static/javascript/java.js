@@ -77,3 +77,10 @@ document.addEventListener("DOMContentLoaded", function () {
         dropdown.style.display = "none";
     });
 });
+
+const menu = document.querySelector("#menu-icon");
+const navmenu = document.querySelector(".navmenu");
+
+menu.onclick = () => {
+    navmenu.classList.toggle("open");
+};

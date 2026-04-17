@@ -698,3 +698,135 @@ html {
     border-radius: 5px;
     background: #fafafa;
 }
+
+@media (max-width: 1024px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    .main-text h1 {
+        font-size: 50px;
+    }
+
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .update-cart {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navmenu {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background: #fff;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        transition: 0.3s;
+    }
+
+    .navmenu.open {
+        right: 0;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    /* HERO */
+    .main-text h1 {
+        font-size: 40px;
+    }
+
+    .main-text p {
+        font-size: 16px;
+    }
+
+    /* PRODUCTS */
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* UPDATE SECTION */
+    .update-cart {
+        grid-template-columns: 1fr;
+    }
+
+    /* CONTACT */
+    .contact-info {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    /* SEARCH */
+    .search-box input {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 10px 5%;
+    }
+
+    .logo img {
+        max-width: 90px;
+    }
+
+    /* HERO TEXT */
+    .main-text h1 {
+        font-size: 28px;
+    }
+
+    .main-text p {
+        font-size: 14px;
+    }
+
+    .main-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    /* PRODUCTS */
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    /* PRODUCT CARD */
+    .row img {
+        width: 100%;
+    }
+
+    /* CHATBOX */
+    #chat-container {
+        width: 90% !important;
+        right: 5% !important;
+    }
+
+    /* NAV ICON */
+    .nav-icon {
+        gap: 10px;
+    }
+
+    .nav-icon i {
+        font-size: 20px;
+    }
+
+}
+
+.main-home {
+    padding: 0 5%;
+}
